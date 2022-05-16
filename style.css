@@ -1,0 +1,133 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	font-family: "Kumbh Sans", sans-serif;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100vh;
+	background-color: hsl(185, 75%, 39%);
+	position: relative;
+	display: grid;
+	place-items: center;
+	grid-template-rows: 10fr 1fr;
+	background-image: url("images/bg-pattern-top.svg"),
+		url("images/bg-pattern-bottom.svg");
+	background-repeat: no-repeat, no-repeat;
+	background-position-y: -30em, 20em;
+	background-position-x: -25em, 35em;
+}
+
+@media (max-width: 550px) {
+	#wrapper {
+		background-image: url("images/bg-pattern-top.svg"),
+			url("images/bg-pattern-bottom.svg");
+		background-repeat: no-repeat, no-repeat;
+		background-position-y: -26em, 12em;
+		background-position-x: -47em, 11em;
+	}
+}
+
+#top-pattern {
+	position: absolute;
+	width: 15em;
+	top: 0px;
+	left: 0px;
+}
+
+#bottom-pattern {
+	position: absolute;
+	width: 15em;
+	right: 0px;
+	bottom: 0px;
+}
+
+main {
+	max-width: 24em;
+	width: 90%;
+	height: 24em;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1;
+	position: relative;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.image-pattern {
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+
+.avatar {
+	width: 7em;
+	border-radius: 50%;
+	border: 7px hsl(0, 0%, 100%) solid;
+	z-index: 2;
+	position: absolute;
+	top: 42%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+}
+
+.text {
+	width: 100%;
+	text-align: center;
+}
+
+.stats {
+	width: 100%;
+	border-top: 1px hsl(0, 0%, 59%) solid;
+	align-self: flex-end;
+	margin-top: 0.2em;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	padding: 0em 3em;
+}
+
+li {
+	list-style: none;
+}
+
+p {
+	font-weight: 700;
+	color: hsl(229, 23%, 23%);
+}
+
+.grey-text {
+	color: hsl(227, 10%, 46%);
+}
+
+.grey-li {
+	color: hsl(227, 10%, 46%);
+	font-size: 0.8em;
+}
+
+li p {
+	font-weight: 700;
+	margin: 0px;
+	font-size: 1.5em;
+	color: hsl(229, 23%, 23%);
+}
+
+a {
+	text-decoration: none;
+	color: hsl(229, 23%, 23%);
+}
+
+.attribution {
+	text-align: center;
+	align-self: flex-end;
+}

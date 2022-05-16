@@ -16,8 +16,8 @@ body {
 	background-image: url("images/bg-pattern-top.svg"),
 		url("images/bg-pattern-bottom.svg");
 	background-repeat: no-repeat, no-repeat;
-	background-position-y: -30em, 20em;
-	background-position-x: -25em, 35em;
+	background-position-y: -30em, 15em;
+	background-position-x: -25em, 45em;
 }
 
 @media (max-width: 550px) {
